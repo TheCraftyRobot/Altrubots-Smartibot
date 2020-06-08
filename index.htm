@@ -2,7 +2,8 @@
 <!-- saved from url=(0047)https://altrubots.com/pilot/remoteBotVideo.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <title> Bot Video Transmission </title>
-    <script src="https://static.opentok.com/v2/js/opentok.min.js"></script><style type="text/css">/*!
+    <link href="https://altrubots.com/pilot/remoteBotVideo/BotVideoTransmission_files/remoteapp.css" rel="stylesheet" type="text/css">
+    <script src="https://altrubots.com/pilot/remoteBotVideo/BotVideoTransmission_files/opentok.min.js"></script><style type="text/css">/*!
  * Copyright (c) 2017 TokBox, Inc.
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
@@ -17,7 +18,7 @@
 .OT_root * {
   color: #ffffff;
   margin: 0;
-  padding: 0;s
+  padding: 0;
   border: 0;
   font-size: 100%;
   font-family: Arial, Helvetica, sans-serif;
@@ -1087,32 +1088,30 @@
 
 
 <body>
-<div style="text-align:center">
-   <!--
-<img src="https://d2sj6nw3s1w6r0.cloudfront.net/img/grayblue2.gif" class="img-fluid cstm-logo">
--->
-<h3>Enter Bot Name:</h3>
- <input type="text" name="enter" class="enter" value="" id="botName">
- <h3>Enter Bot Key:</h3>
- <input type="text" name="enter" class="enter" value="" id="botKey">
- <h3>Enter Owner Name:</h3>
- <input type="text" name="enter" class="enter" value="" id="ownerName">
- <input id="connectButton" type="button" value="Connect" onclick="connect(); Puck.write('digitalWrite(D4, 0);\n analogWrite(D6, 0.0);\n digitalWrite(D11, 0);\n analogWrite(D10, 0.0);\n');">
- <input id="AutoPop" type="button" value="Auto Populate" onclick="autopop();">
-</div>
+
     <div id="videos">
-
-     <div id="publisher"></div>
+      <div id="subscriber"></div>
+  <div id="publisher"><div id="OT_39879c92-310c-4f5e-944a-64b0b24f54de" class="OT_mirrored OT_root OT_publisher OT_fit-mode-cover" style="width: 100%; height: 100%; overflow: hidden;"><div class="OT_widget-container" style="width: 100%; height: 100%;"><div class="OT_video-poster" style="display: none;"></div><div class="OT_video-loading"><div class="OT_video-loading-spinner"></div></div><video autoplay="true" playsinline="true" class="OT_video-element">Sorry, Web RTC is not available in your browser</video></div><div class="OT_bar OT_edge-bar-item OT_mode-auto"></div><h1 class="OT_name OT_edge-bar-item OT_mode-off"></h1><h1 class="OT_archiving OT_edge-bar-item OT_edge-bottom OT_archiving-off OT_mode-off"><div class="OT_archiving-light-box"><div class="OT_archiving-light"></div></div><div class="OT_archiving-status OT_mode-on OT_edge-bar-item OT_edge-bottom"></div></h1><button class="OT_edge-bar-item OT_mute OT_mode-auto" type="button">Mute</button><div class="OT_audio-level-meter OT_hide-forced"><div class="OT_audio-level-meter__audio-only-img"></div><div class="OT_audio-level-meter__value"></div></div></div></div>
     </div>
-    <script type="text/javascript" src="https://altrubots.com/pilot/js/remotebotapp.js"></script>
-      <script type="text/javascript" src="https://thecraftyrobot.github.io/smartibot_webpad/js/puck.js"></script>
+    <script type="text/javascript" src="./js/remotebotapp.js"></script>
 
-<script type="text/javascript">
+    <div style="text-align:center">
+       <!--
+    <img src="https://d2sj6nw3s1w6r0.cloudfront.net/img/grayblue2.gif" class="img-fluid cstm-logo">
+    -->
+    <h3>Enter Bot Name:</h3>
+     <input type="text" name="enter" class="enter" value="" id="botName">
+     <h3>Enter Bot Key:</h3>
+     <input type="text" name="enter" class="enter" value="" id="botKey">
+     <h3>Enter Owner Name:</h3>
+     <input type="text" name="enter" class="enter" value="" id="ownerName">
+     <input id="connectButton" type="button" value="Connect" onclick="connect(); Puck.write('digitalWrite(D4, 0);\n analogWrite(D6, 0.0);\n digitalWrite(D11, 0);\n analogWrite(D10, 0.0);\n');">
+     <input id="AutoPop" type="button" value="Load Name/Key" onclick="autopop();">
+    </div>
 
 
+<script type="text/javascript" src="https://thecraftyrobot.github.io/smartibot_webpad/js/puck.js"></script>
 
-
-</script>
 
 
 
