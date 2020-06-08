@@ -84,7 +84,6 @@ function csGetMessage(message){
       }else if(message.data == "O"){
 	Puck.write('go("LD");\n');
          console.log("Boost");
-      }
       }else if(message.data == "U"){
 	Puck.write('go("LU");\n');
          console.log("Up");
