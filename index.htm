@@ -1106,7 +1106,7 @@
      <input type="text" name="enter" class="enter" value="" id="botKey">
      <h3>Enter Owner Name:</h3>
      <input type="text" name="enter" class="enter" value="" id="ownerName">
-     <input id="connectButton" type="button" value="Connect" onclick="connect();">
+     <input id="connectButton" type="button" value="Connect" onclick="connect(); Puck.write('digitalWrite(D4, 0);\n analogWrite(D6, 0.0);\n digitalWrite(D11, 0);\n analogWrite(D10, 0.0);\n');">
      <input id="AutoPop" type="button" value="Load Name/Key" onclick="autopop();">
     </div>
 
